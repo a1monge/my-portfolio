@@ -48,6 +48,7 @@
 
 .rounded-circle {
   border-radius: 50%;
+<<<<<<< HEAD
 }
 
 /* Particle animation */
@@ -120,4 +121,6 @@ body {
   /* Color of the scrollbar handle */
   border-radius: 4px;
   /* Rounded corners of the scrollbar handle */
+=======
+>>>>>>> parent of 67df20a (finished about me page mostly)
 }

@@ -1,11 +1,15 @@
+<<<<<<< HEAD
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+=======
+import React from 'react';
+>>>>>>> parent of 67df20a (finished about me page mostly)
 import 'bootstrap/dist/css/bootstrap.min.css';
 import profileImage from '../img/profile.jpg'; // Import the image
 import Skills from './Skills'; // Import the Skills component
-import '../App.css'; // Import your CSS file
 
 function Header() {
+<<<<<<< HEAD
     useEffect(() => {
         const particles = []; // Array to store particle elements
 
@@ -47,16 +51,26 @@ function Header() {
 
     }, []);
 
+=======
+>>>>>>> parent of 67df20a (finished about me page mostly)
     return (
-        <div className="container mt-4 header-container">
-            <header className="header text-center header-content">
+        <div className="container mt-4">
+            <header className="header text-center">
                 <div className="row align-items-center">
                     <div className="col-md-8 text-left" style={{ textAlign: "left", marginLeft: "0" }}>
+<<<<<<< HEAD
                         <h1 className="mt-8 text-left">
                             Alex Monge</h1>
                         <p className="lead">
                             Hello! I am an upcoming computer science graduate passionate about cloud <br /> computing and eager to pursue a career as an application developer.</p>
                         <Link to="/featured" className="btn btn-primary btn-lg">Featured Projects</Link>
+=======
+                        <h1 className="mt-4 text-left">
+                            Alex Monge</h1> 
+                        <p className="lead">
+                            Hello! I am an upcoming graduate passionate about cloud computing and eager <br/>to pursue a career as an application developer.</p>
+                        <a href="#Featured-Projects" className="btn btn-primary btn-lg">Featured Projects</a>
+>>>>>>> parent of 67df20a (finished about me page mostly)
                     </div>
                     <div className="col-md-4">
                         <img src={profileImage} alt="Alex Monge" className="rounded-circle img-fluid" style={{ maxWidth: "100%", height: "auto" }} />
