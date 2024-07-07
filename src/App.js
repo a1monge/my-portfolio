@@ -11,7 +11,7 @@ function App() {
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
         <Navbar />
         <Switch>
-          <Route path="/" exact>
+          <Route path="/my-portfolio" exact>
             <Header />
           </Route>
           <Route path="/featured">
