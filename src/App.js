@@ -1,29 +1,20 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
-<<<<<<< HEAD
-import FeaturedProjects from './components/Featured';
-=======
+import 'bootstrap/dist/js/bootstrap.bundle.min'; // Import Bootstrap JS
 
->>>>>>> parent of 67df20a (finished about me page mostly)
+import $ from 'jquery'; // Import jQuery for Bootstrap JS components
+
+
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-        <Navbar />
-        <Switch>
-          <Route path="/my-portfolio" exact>
-            <Header />
-          </Route>
-          <Route path="/featured">
-            <FeaturedProjects />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
+    <div className="App">
+      <Navbar />
+      <Header />
+    </div>
   );
 }
 
