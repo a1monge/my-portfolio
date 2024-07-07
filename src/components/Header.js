@@ -1,5 +1,3 @@
-// Header.js
-
 import React, { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import profileImage from '../img/profile.jpg'; // Import the image
@@ -8,9 +6,16 @@ import '../App.css'; // Import your CSS file
 
 function Header() {
     useEffect(() => {
+        const particles = []; // Array to store particle elements
+
         const createParticle = () => {
-            const particle = document.createElement('div');
-            particle.classList.add('particle');
+            let particle = particles.find(p => p.classList.contains('inactive')); // Find an inactive particle to reuse
+            if (!particle) {
+                particle = document.createElement('div');
+                particle.classList.add('particle');
+                document.body.appendChild(particle);
+            }
+
             particle.style.left = `${Math.random() * window.innerWidth}px`; // Random horizontal position within viewport
             particle.style.top = `${Math.random() * window.innerHeight}px`; // Random vertical position within viewport
 
@@ -20,8 +25,7 @@ function Header() {
 
             particle.style.setProperty('--drift-x', `${driftX}px`);
             particle.style.setProperty('--drift-y', `${driftY}px`);
-
-            document.body.appendChild(particle);
+            particle.classList.remove('inactive'); // Remove inactive class to activate particle
         };
 
         // Function to generate particles initially and every 30 seconds
@@ -35,7 +39,7 @@ function Header() {
         generateParticles();
 
         // Set interval for particle generation
-        const particleInterval = setInterval(generateParticles, 30000);
+        const particleInterval = setInterval(generateParticles, 20000);
 
         // Clean up function to clear interval on component unmount
         return () => clearInterval(particleInterval);
@@ -50,7 +54,7 @@ function Header() {
                         <h1 className="mt-4 text-left">
                             Alex Monge</h1>
                         <p className="lead">
-                            Hello! I am an upcoming graduate passionate about cloud computing and eager <br />to pursue a career as an application developer.</p>
+                            Hello! I am an upcoming computer science graduate passionate about cloud computing and eager <br />to pursue a career as an application developer.</p>
                         <a href="#Featured-Projects" className="btn btn-primary btn-lg">Featured Projects</a>
                     </div>
                     <div className="col-md-4">
