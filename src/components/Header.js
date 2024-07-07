@@ -40,7 +40,7 @@ function Header() {
         generateParticles();
 
         // Set interval for particle generation
-        const particleInterval = setInterval(generateParticles, 1000000);
+        const particleInterval = setInterval(generateParticles, 100000);
 
         // Clean up function to clear interval on component unmount
         return () => clearInterval(particleInterval);
