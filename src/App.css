@@ -171,20 +171,21 @@ body {
 
 /* Track (background) of the scrollbar */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: rgb(55, 55, 55);
   /* Color of the scrollbar track */
 }
 
 /* Handle (thumb) of the scrollbar */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: black;
   /* Color of the scrollbar handle */
   border-radius: 4px;
   /* Rounded corners of the scrollbar handle */
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-  /* Darker color when hovering over the scrollbar handle */
+/*::-webkit-scrollbar-thumb:hover {
+  background: white;
+  /* Darker color when hovering over the scrollbar handle 
 }
+*/

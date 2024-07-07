@@ -1,20 +1,24 @@
 import React from 'react';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
-import 'bootstrap/dist/js/bootstrap.bundle.min'; // Import Bootstrap JS
-
-import $ from 'jquery'; // Import jQuery for Bootstrap JS components
-
-
+import FeaturedProjects from './components/Featured';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Header />
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Switch>
+          <Route path="/" exact>
+            <Header />
+          </Route>
+          <Route path="/featured-projects">
+            <FeaturedProjects />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

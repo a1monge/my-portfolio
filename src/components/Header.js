@@ -30,7 +30,7 @@ function Header() {
 
         // Function to generate particles initially and every 30 seconds
         const generateParticles = () => {
-            for (let i = 0; i < 50; i++) {
+            for (let i = 0; i < 40; i++) {
                 createParticle();
             }
         };
@@ -39,7 +39,7 @@ function Header() {
         generateParticles();
 
         // Set interval for particle generation
-        const particleInterval = setInterval(generateParticles, 20000);
+        const particleInterval = setInterval(generateParticles, 100000);
 
         // Clean up function to clear interval on component unmount
         return () => clearInterval(particleInterval);
