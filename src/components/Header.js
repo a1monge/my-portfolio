@@ -15,7 +15,7 @@ function Header() {
             particle.style.top = `${Math.random() * window.innerHeight}px`; // Random vertical position within viewport
 
             // Calculate drift distance based on initial position
-            const driftX = Math.random() * 200 - 50; // Range of -65 to 135 pixels horizontally
+            const driftX = Math.random() * 200 - 65; // Range of -65 to 135 pixels horizontally
             const driftY = Math.random() * 200 - 80; // Range of -80 to 120 pixels vertically
 
             particle.style.setProperty('--drift-x', `${driftX}px`);
@@ -36,6 +36,8 @@ function Header() {
 
         // Set interval for particle generation
         const particleInterval = setInterval(generateParticles, 30000);
+
+        // Clean up function to clear interval on component unmount
         return () => clearInterval(particleInterval);
 
     }, []);
