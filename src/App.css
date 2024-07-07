@@ -87,3 +87,74 @@
 .rounded-circle {
   border-radius: 50%;
 }
+
+
+/* App.css */
+
+/* Keyframes for particle animation */
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(var(--translate-x), var(--translate-y));
+    opacity: 1;
+    /* Maintain opacity */
+  }
+}
+
+/* App.css */
+
+/* Keyframes for particle animation */
+@keyframes drift {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(var(--drift-x), var(--drift-y));
+    opacity: 1;
+  }
+}
+
+.particle {
+  position: fixed;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: rgb(2, 2, 83);
+  /* Set all particles to purple */
+  animation: drift 30s linear forwards;
+  /* Slow spreading animation */
+  z-index: 0;
+  /* Ensure particles stay behind content */
+}
+
+body {
+  overflow-x: hidden;
+  /* Hide horizontal scrollbar */
+}
+
+.container {
+  max-width: 100%;
+  /* Ensure content fits within viewport */
+  overflow-x: hidden;
+  /* Hide overflow for containers */
+}
+
+.header-container {
+  position: relative;
+  overflow: hidden;
+  /* Ensure particles don't overflow the container */
+  height: 100vh;
+  /* Set a height to the container */
+}
+
+.header-content {
+  position: relative;
+  z-index: 1;
+  /* Ensure content stays above particles */
+}

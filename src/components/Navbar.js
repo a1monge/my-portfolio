@@ -1,7 +1,16 @@
 // Navbar.js
-import React from 'react';
+import React, { useEffect } from 'react';
+import $ from 'jquery'; // Import jQuery for Bootstrap JS components
+import 'bootstrap/dist/js/bootstrap.bundle.min'; // Import Bootstrap JS
 
 const Navbar = () => {
+    // Initialize the Bootstrap navbar toggle with jQuery
+    useEffect(() => {
+        $('.navbar-toggler').on('click', function () {
+            $(this).toggleClass('active');
+        });
+    }, []);
+
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container">
