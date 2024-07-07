@@ -1,55 +1,15 @@
-/* Existing styles */
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* Additional styles */
+/* App.css */
 .App {
   background-color: #121212;
   color: #ffffff;
   min-height: 100vh;
+  /* Ensures the entire viewport height is utilized */
   display: flex;
   flex-direction: column;
 }
 
 .navbar-brand {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 .nav-link {
@@ -61,53 +21,36 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 15px;
 }
 
 .lead {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .btn-primary {
-  background-color: #007bff;
+  background-color: rgba(0, 0, 255, 0.728);
   border: none;
 }
 
 .btn-primary:hover {
-  background-color: #0056b3;
+  background-color: blue;
 }
 
 .img-fluid {
   max-width: 100%;
+  /* Ensure images resize responsively */
   height: auto;
+  /* Maintain aspect ratio */
 }
 
 .rounded-circle {
   border-radius: 50%;
 }
 
-
-/* App.css */
-
-/* Keyframes for particle animation */
-@keyframes float {
-  0% {
-    transform: translate(0, 0);
-    opacity: 1;
-  }
-
-  100% {
-    transform: translate(var(--translate-x), var(--translate-y));
-    opacity: 1;
-    /* Maintain opacity */
-  }
-}
-
-/* App.css */
-
-/* Keyframes for particle animation */
+/* Particle animation */
 @keyframes drift {
   0% {
     transform: translate(0, 0);
@@ -126,13 +69,13 @@
   height: 5px;
   border-radius: 50%;
   background-color: rgb(2, 2, 83);
-  /* Set all particles to purple */
   animation: drift 30s linear forwards;
-  /* Slow spreading animation */
+  /* Animation settings */
   z-index: 0;
   /* Ensure particles stay behind content */
 }
 
+/* Ensure content containers fit within viewport */
 body {
   overflow-x: hidden;
   /* Hide horizontal scrollbar */
@@ -149,8 +92,8 @@ body {
   position: relative;
   overflow: hidden;
   /* Ensure particles don't overflow the container */
-  height: 100vh;
-  /* Set a height to the container */
+  min-height: 100vh;
+  /* Set a minimum height to the container */
 }
 
 .header-content {
@@ -159,9 +102,7 @@ body {
   /* Ensure content stays above particles */
 }
 
-/* Scrollbar.css */
-
-/* Width and height of the scrollbar */
+/* Scrollbar styles */
 ::-webkit-scrollbar {
   width: 8px;
   /* Width of the scrollbar */
@@ -169,23 +110,14 @@ body {
   /* Height of the scrollbar */
 }
 
-/* Track (background) of the scrollbar */
 ::-webkit-scrollbar-track {
   background: rgb(55, 55, 55);
   /* Color of the scrollbar track */
 }
 
-/* Handle (thumb) of the scrollbar */
 ::-webkit-scrollbar-thumb {
   background: black;
   /* Color of the scrollbar handle */
   border-radius: 4px;
   /* Rounded corners of the scrollbar handle */
 }
-
-/* Handle on hover */
-/*::-webkit-scrollbar-thumb:hover {
-  background: white;
-  /* Darker color when hovering over the scrollbar handle 
-}
-*/

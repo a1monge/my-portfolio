@@ -8,12 +8,13 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
         <Navbar />
         <Switch>
-          <Route path="/my-portfolio" exact>
+          <Route path="/" exact>
             <Header />
           </Route>
-          <Route path="/featured-projects">
+          <Route path="/featured">
             <FeaturedProjects />
           </Route>
         </Switch>
