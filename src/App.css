@@ -10,11 +10,15 @@
 
 .navbar-brand {
   font-size: 2.5rem;
+  z-index: 10;
+  /* Ensure navbar is above other content */
 }
 
 .nav-link {
   color: #ffffff !important;
   margin-right: 20px;
+  z-index: 10;
+  /* Ensure navbar links are above other content */
 }
 
 .header {
@@ -24,6 +28,10 @@
   justify-content: left;
   align-items: center;
   padding-top: 15px;
+  position: relative;
+  /* Ensure header content can be positioned */
+  z-index: 1;
+  /* Keep header content above particles */
 }
 
 .lead {
@@ -33,12 +41,14 @@
 .btn-primary {
   background-color: rgba(0, 0, 255, 0.728);
   border: none;
-  z-index: 2;
+  z-index: 10;
+  /* Ensure buttons are above other content */
 }
 
 .btn-primary:hover {
   background-color: blue;
-  z-index: 2;
+  z-index: 10;
+  /* Hover state above other content */
 }
 
 .img-fluid {
@@ -78,20 +88,6 @@ body {
   /* Hide overflow for containers */
 }
 
-.header-container {
-  position: relative;
-  overflow: hidden;
-  /* Ensure particles don't overflow the container */
-  min-height: 100vh;
-  /* Set a minimum height to the container */
-}
-
-.header-content {
-  position: relative;
-  z-index: 1;
-  /* Ensure content stays above particles */
-}
-
 /* Scrollbar styles */
 ::-webkit-scrollbar {
   width: 8px;
@@ -115,16 +111,16 @@ body {
 /* Ensure particles stay behind the featured section */
 .featured-projects {
   position: relative;
-  z-index: 3;
-  /* Higher z-index to stay above particles */
+  z-index: 2;
+  /* Higher z-index to stay above regular content */
 }
 
 .featured-section {
   color: #ffffff;
   padding: 40px 0;
   position: relative;
-  z-index: 2;
-  /* Ensure it stays above particles */
+  z-index: 3;
+  /* Ensure it stays above regular content */
 }
 
 .container-fluid {
@@ -134,7 +130,7 @@ body {
 }
 
 .card {
-  z-index: 2 !important;
+  z-index: 4 !important;
   color: #ffffff;
   background-color: #121212 !important;
   border: 1px solid #333;
@@ -147,18 +143,18 @@ body {
 
 .card-title {
   font-size: 2.5rem;
-  z-index: 2;
+  z-index: 5;
   color: #ffffff;
 }
 
 .card-text {
   font-size: 1.0rem;
-  z-index: 2;
+  z-index: 5;
   color: #bfbfbf;
 }
 
 .project-img {
-  z-index: 2 !important;
+  z-index: 4 !important;
   max-width: 100%;
   width: 100%;
   margin-bottom: 20px;
@@ -173,6 +169,14 @@ body {
   background-color: rgb(2, 2, 83);
   animation: drift 30s linear forwards;
   /* Animation settings */
-  z-index: 0 !important;
+  z-index: 0;
   /* Ensure particles stay behind content */
+}
+
+/* Ensure skills logos are aligned horizontally */
+.skill {
+  width: 150px;
+  text-align: center;
+  z-index: 4;
+  /* Ensure skills are above particles */
 }
