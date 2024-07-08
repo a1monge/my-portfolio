@@ -22,7 +22,7 @@ const Featured = () => {
 
         {
             title: "Galaga Game",
-            description: "This was a personal project in where I created an imitation game of Galaga. In this game you control a spaceship at the bottom of the screen. Your objective is to shoot down the waves of enemies that appear from the top of the screen while avoiding their projectiles. The game keeps track of your score, which increases as you destroy enemies. The game ends when an enemy projectile hits your spaceship.",
+            description: "This was a personal project in which I created an imitation game of Galaga. In this game you control a spaceship at the bottom of the screen. Your objective is to shoot down the waves of enemies that appear from the top of the screen while avoiding their projectiles. The game keeps track of your score, which increases as you destroy enemies. The game ends when an enemy projectile hits your spaceship.",
             link: "https://github.com/a1monge/Galaga.git",
             img: galaga
         },
