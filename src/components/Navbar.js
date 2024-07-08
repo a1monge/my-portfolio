@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
 import $ from 'jquery'; // Import jQuery for Bootstrap JS components
 import 'bootstrap/dist/js/bootstrap.bundle.min'; // Import Bootstrap JS
-import featured from './Featured'
-import header from './Header'
 
 const Navbar = () => {
     // Initialize the Bootstrap navbar toggle with jQuery
@@ -13,9 +11,9 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark z-index-1000">
             <div className="container">
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#App" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNav">

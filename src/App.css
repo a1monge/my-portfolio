@@ -3,22 +3,21 @@
   background-color: #121212 !important;
   color: #ffffff;
   min-height: 100vh;
-  /* Ensures the entire viewport height is utilized */
   display: flex;
   flex-direction: column;
 }
 
 .navbar-brand {
   font-size: 2.5rem;
-  z-index: 10;
-  /* Ensure navbar is above other content */
+  z-index: 0 !important;
+  border-bottom: 2px solid white;
+  /* Add a white border at the bottom */
 }
 
 .nav-link {
   color: #ffffff !important;
   margin-right: 20px;
-  z-index: 10;
-  /* Ensure navbar links are above other content */
+  z-index: 1000;
 }
 
 .header {
@@ -29,9 +28,7 @@
   align-items: center;
   padding-top: 15px;
   position: relative;
-  /* Ensure header content can be positioned */
   z-index: 1;
-  /* Keep header content above particles */
 }
 
 .lead {
@@ -42,20 +39,16 @@
   background-color: rgba(0, 0, 255, 0.728);
   border: none;
   z-index: 10;
-  /* Ensure buttons are above other content */
 }
 
 .btn-primary:hover {
   background-color: blue;
   z-index: 10;
-  /* Hover state above other content */
 }
 
 .img-fluid {
   max-width: 100%;
-  /* Ensure images resize responsively */
   height: auto;
-  /* Maintain aspect ratio */
 }
 
 .rounded-circle {
@@ -66,53 +59,42 @@
 @keyframes drift {
   0% {
     transform: translate(0, 0);
-    opacity: 1;
   }
 
   100% {
     transform: translate(var(--drift-x), var(--drift-y));
-    opacity: 1;
   }
 }
 
 /* Ensure content containers fit within viewport */
 body {
   overflow-x: hidden;
-  /* Hide horizontal scrollbar */
 }
 
 .container {
+  z-index: 200 !important;
   max-width: 100%;
-  /* Ensure content fits within viewport */
   overflow-x: hidden;
-  /* Hide overflow for containers */
 }
 
 /* Scrollbar styles */
 ::-webkit-scrollbar {
   width: 8px;
-  /* Width of the scrollbar */
   height: 8px;
-  /* Height of the scrollbar */
 }
 
 ::-webkit-scrollbar-track {
   background: rgb(55, 55, 55);
-  /* Color of the scrollbar track */
 }
 
 ::-webkit-scrollbar-thumb {
   background: black;
-  /* Color of the scrollbar handle */
   border-radius: 4px;
-  /* Rounded corners of the scrollbar handle */
 }
 
-/* Ensure particles stay behind the featured section */
 .featured-projects {
   position: relative;
   z-index: 2;
-  /* Higher z-index to stay above regular content */
 }
 
 .featured-section {
@@ -120,13 +102,11 @@ body {
   padding: 40px 0;
   position: relative;
   z-index: 3;
-  /* Ensure it stays above regular content */
 }
 
 .container-fluid {
   z-index: 2;
   height: auto;
-  /* Ensures images resize responsively */
 }
 
 .card {
@@ -138,7 +118,6 @@ body {
   padding: 15px;
   box-shadow: 0 0 10px rgba(84, 13, 237, 0.3);
   margin: 0 auto;
-  /* Centers the card horizontally */
 }
 
 .card-title {
@@ -158,7 +137,6 @@ body {
   max-width: 100%;
   width: 100%;
   margin-bottom: 20px;
-  /* Adjusted padding for better alignment */
 }
 
 .particle {
@@ -166,17 +144,19 @@ body {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background-color: rgb(2, 2, 83);
-  animation: drift 30s linear forwards;
-  /* Animation settings */
+  background-color: rgb(0, 0, 128);
+  animation: drift 30s linear infinite;
   z-index: 0;
-  /* Ensure particles stay behind content */
 }
 
-/* Ensure skills logos are aligned horizontally */
 .skill {
   width: 150px;
   text-align: center;
   z-index: 4;
-  /* Ensure skills are above particles */
+}
+
+.z-index-1000 {
+  z-index: 1000;
+  position: relative;
+  /* Ensure z-index works */
 }

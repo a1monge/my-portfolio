@@ -22,22 +22,27 @@ function Header() {
 
             // Calculate drift distance based on initial position
             const driftX = Math.random() * 200 - 40; // Range of -65 to 135 pixels horizontally
-            const driftY = Math.random() * 200 - 80; // Range of -80 to 120 pixels vertically
+            const driftY = Math.random() * 200 - 70; // Range of -80 to 120 pixels vertically
 
             particle.style.setProperty('--drift-x', `${driftX}px`);
             particle.style.setProperty('--drift-y', `${driftY}px`);
-            particle.classList.remove('inactive'); // Remove inactive class to activate particle
         };
 
         // Function to generate particles initially and every 30 seconds
         const generateParticles = () => {
-            for (let i = 0; i < 60; i++) {
+            for (let i = 0; i < 25; i++) {
                 createParticle();
             }
         };
 
         // Initial particle generation
         generateParticles();
+
+        // Animate particles indefinitely every 3 seconds
+        const interval = setInterval(createParticle, 3000);
+
+        // Cleanup on unmount
+        return () => clearInterval(interval);
 
 
 
