@@ -144,9 +144,8 @@ body {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background-color: rgb(0, 0, 128);
+  background-color: rgb(0, 27, 148);
   animation: drift 30s linear infinite;
-  z-index: 0;
 }
 
 .skill {

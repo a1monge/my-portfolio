@@ -9,43 +9,38 @@ function Header() {
         const particles = []; // Array to store particle elements
 
         const createParticle = () => {
-            let particle = particles.find(p => p.classList.contains('inactive')); // Find an inactive particle to reuse
-            if (!particle) {
-                particle = document.createElement('div');
-                particle.classList.add('particle');
-                document.body.appendChild(particle);
-                particles.push(particle); // Add new particle to the array
-            }
+            const particle = document.createElement('div');
+            particle.classList.add('particle');
 
             particle.style.left = `${Math.random() * window.innerWidth}px`; // Random horizontal position within viewport
             particle.style.top = `${Math.random() * window.innerHeight}px`; // Random vertical position within viewport
 
             // Calculate drift distance based on initial position
             const driftX = Math.random() * 200 - 40; // Range of -65 to 135 pixels horizontally
-            const driftY = Math.random() * 200 - 70; // Range of -80 to 120 pixels vertically
+            const driftY = Math.random() * 200 - 40; // Range of -80 to 120 pixels vertically
 
             particle.style.setProperty('--drift-x', `${driftX}px`);
             particle.style.setProperty('--drift-y', `${driftY}px`);
+
+            document.body.appendChild(particle);
+            particles.push(particle); // Add new particle to the array
         };
 
-        // Function to generate particles initially and every 30 seconds
+        // Initial particle generation
         const generateParticles = () => {
-            for (let i = 0; i < 28; i++) {
+            for (let i = 0; i < 50; i++) { // Adjust the number of particles as needed
                 createParticle();
             }
         };
 
-        // Initial particle generation
+        // Generate particles initially
         generateParticles();
 
-        // Animate particles indefinitely every 3 seconds
-        const interval = setInterval(createParticle, 3000);
-
-        // Cleanup on unmount
-        return () => clearInterval(interval);
-
-
-
+        // Cleanup on unmount (if needed)
+        return () => {
+            // Remove particles from the DOM on unmount
+            particles.forEach(particle => particle.remove());
+        };
     }, []);
 
     return (
