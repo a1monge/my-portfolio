@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.624d024f.css",
-    "main.js": "/my-portfolio/static/js/main.94d1f85e.js",
+    "main.js": "/my-portfolio/static/js/main.a2cd635d.js",
     "static/js/453.acca0757.chunk.js": "/my-portfolio/static/js/453.acca0757.chunk.js",
     "static/media/collab.png": "/my-portfolio/static/media/collab.9a5f752a87614ca2f354.png",
     "static/media/Galaga.png": "/my-portfolio/static/media/Galaga.8e37c31533afae93ac33.png",
     "static/media/react-logo.png": "/my-portfolio/static/media/react-logo.81ed438b18e24116794d.png",
     "static/media/bootstrap-icons.woff?": "/my-portfolio/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
     "static/media/profile.jpg": "/my-portfolio/static/media/profile.939c616c1934cdba8c65.jpg",
-    "static/media/node-logo.png": "/my-portfolio/static/media/node-logo.793efb84b03d48fb1b16.png",
+    "static/media/node-logo.png": "/my-portfolio/static/media/node-logo.1bc866ab7c5252459c45.png",
     "static/media/bootstrap-icons.woff2?": "/my-portfolio/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
     "static/media/sql-logo.png": "/my-portfolio/static/media/sql-logo.947242f6215e7e090e2c.png",
     "static/media/java-logo.png": "/my-portfolio/static/media/java-logo.fdabd4e11f1235e4e8e0.png",
     "static/media/python-logo.png": "/my-portfolio/static/media/python-logo.b3934c229cb35736176e.png",
     "index.html": "/my-portfolio/index.html",
     "main.624d024f.css.map": "/my-portfolio/static/css/main.624d024f.css.map",
-    "main.94d1f85e.js.map": "/my-portfolio/static/js/main.94d1f85e.js.map",
+    "main.a2cd635d.js.map": "/my-portfolio/static/js/main.a2cd635d.js.map",
     "453.acca0757.chunk.js.map": "/my-portfolio/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.624d024f.css",
-    "static/js/main.94d1f85e.js"
+    "static/js/main.a2cd635d.js"
   ]
 }
