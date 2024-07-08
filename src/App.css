@@ -1,6 +1,6 @@
 /* App.css */
 .App {
-  background-color: #121212;
+  background-color: #121212 !important;
   color: #ffffff;
   min-height: 100vh;
   /* Ensures the entire viewport height is utilized */
@@ -33,10 +33,12 @@
 .btn-primary {
   background-color: rgba(0, 0, 255, 0.728);
   border: none;
+  z-index: 2;
 }
 
 .btn-primary:hover {
   background-color: blue;
+  z-index: 2;
 }
 
 .img-fluid {
@@ -48,7 +50,6 @@
 
 .rounded-circle {
   border-radius: 50%;
-
 }
 
 /* Particle animation */
@@ -62,18 +63,6 @@
     transform: translate(var(--drift-x), var(--drift-y));
     opacity: 1;
   }
-}
-
-.particle {
-  position: fixed;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background-color: rgb(2, 2, 83);
-  animation: drift 30s linear forwards;
-  /* Animation settings */
-  z-index: 0;
-  /* Ensure particles stay behind content */
 }
 
 /* Ensure content containers fit within viewport */
@@ -121,4 +110,69 @@ body {
   /* Color of the scrollbar handle */
   border-radius: 4px;
   /* Rounded corners of the scrollbar handle */
+}
+
+/* Ensure particles stay behind the featured section */
+.featured-projects {
+  position: relative;
+  z-index: 3;
+  /* Higher z-index to stay above particles */
+}
+
+.featured-section {
+  color: #ffffff;
+  padding: 40px 0;
+  position: relative;
+  z-index: 2;
+  /* Ensure it stays above particles */
+}
+
+.container-fluid {
+  z-index: 2;
+  height: auto;
+  /* Ensures images resize responsively */
+}
+
+.card {
+  z-index: 2 !important;
+  color: #ffffff;
+  background-color: #121212 !important;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(84, 13, 237, 0.3);
+  margin: 0 auto;
+  /* Centers the card horizontally */
+}
+
+.card-title {
+  font-size: 2.5rem;
+  z-index: 2;
+  color: #ffffff;
+}
+
+.card-text {
+  font-size: 1.0rem;
+  z-index: 2;
+  color: #bfbfbf;
+}
+
+.project-img {
+  z-index: 2 !important;
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 20px;
+  /* Adjusted padding for better alignment */
+}
+
+.particle {
+  position: fixed;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: rgb(2, 2, 83);
+  animation: drift 30s linear forwards;
+  /* Animation settings */
+  z-index: 0 !important;
+  /* Ensure particles stay behind content */
 }
