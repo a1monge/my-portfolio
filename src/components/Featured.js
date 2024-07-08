@@ -8,8 +8,8 @@ import restaurant from '../img/restaurant.png';
 const Featured = () => {
     const projects = [
         {
-            title: "WildlifeGrid.com",
-            description: "WildlifeGrid.com is a web application developed as part of a collaborative effort to monitor and manage the distribution of flora and fauna. The project aims to raise awareness about local ecosystems and facilitate community involvement in wildlife monitoring.",
+            title: "WildlifeGrid",
+            description: "WildlifeGrid is a full stack web application developed using HTML, CSS, JavaScript, PHP, and SQL. I was part of a collaborative effort to monitor and manage the distribution of flora and fauna. The project aimed to raise awareness about local ecosystems and facilitate community involvement in wildlife monitoring.",
             link: "https://github.com/a1monge/WildlifeGrid.com.git",
             img: collab
         },
@@ -23,7 +23,7 @@ const Featured = () => {
 
         {
             title: "Galaga Game",
-            description: "This was a personal project in which I created an imitation game of Galaga. In this game you control a spaceship at the bottom of the screen. Your objective is to shoot down the waves of enemies that appear from the top of the screen while avoiding their projectiles. The game keeps track of your score, which increases as you destroy enemies. The game ends when an enemy projectile hits your spaceship.",
+            description: "This was a personal project in which I created an imitation game of the old arcade game Galaga using JavaScript and HtML. In this game you control a spaceship at the bottom of the screen. Your objective is to shoot down the waves of enemies that appear from the top of the screen while avoiding their projectiles. The game keeps track of your score, which increases as you destroy enemies. The game ends when an enemy projectile hits your spaceship.",
             link: "https://github.com/a1monge/Galaga.git",
             img: galaga
         },
