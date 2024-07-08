@@ -7,8 +7,8 @@ import galaga from '../img/Galaga.png';
 const Featured = () => {
     const projects = [
         {
-            title: "Full Stack Capstone Project",
-            description: "Description of project three.",
+            title: "Coming Soon",
+            description: "Full stack Independent Project",
             link: "https://github.com/username/project-three",
             img: projectImage
         },
