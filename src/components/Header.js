@@ -52,7 +52,7 @@ function Header() {
                             <h1 className="mt-4 text-left">
                                 Alex Monge</h1>
                             <p className="lead">
-                                Hello! I am an upcoming graduate passionate about cloud computing and eager <br />to pursue a career as an application developer.</p>
+                                Hello! I am an upcoming computer science graduate passionate about cloud computing and eager <br /> to pursue a career as an application developer.</p>
                             <a href="#Featured" className="btn btn-primary btn-lg">Featured Projects</a>
                         </div>
                         <div className="col-md-4">

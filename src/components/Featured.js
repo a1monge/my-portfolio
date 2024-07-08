@@ -3,16 +3,10 @@ import '../App.css';
 import projectImage from '../img/project-placeholder.jpg';
 import collab from '../img/collab.png';
 import galaga from '../img/Galaga.png';
+import restaurant from '../img/restaurant.png';
 
 const Featured = () => {
     const projects = [
-        {
-            title: "Coming Soon",
-            description: "Full stack Independent Project",
-            link: "https://github.com/username/project-three",
-            img: projectImage
-        },
-
         {
             title: "WildlifeGrid.com",
             description: "WildlifeGrid.com is a web application developed as part of a collaborative effort to monitor and manage the distribution of flora and fauna. The project aims to raise awareness about local ecosystems and facilitate community involvement in wildlife monitoring.",
@@ -21,10 +15,24 @@ const Featured = () => {
         },
 
         {
+            title: "Restaurant Website",
+            description: "This website is a fully responsive web application developed using React. The project showcases my front-end development skills, including dynamic content rendering, responsive design with Bootstrap, and modern, intuitive interfaces.",
+            link: "https://github.com/a1monge/Restaurant-Website.git",
+            img: restaurant
+        },
+
+        {
             title: "Galaga Game",
             description: "This was a personal project in which I created an imitation game of Galaga. In this game you control a spaceship at the bottom of the screen. Your objective is to shoot down the waves of enemies that appear from the top of the screen while avoiding their projectiles. The game keeps track of your score, which increases as you destroy enemies. The game ends when an enemy projectile hits your spaceship.",
             link: "https://github.com/a1monge/Galaga.git",
             img: galaga
+        },
+
+        {
+            title: "Coming Soon!",
+            description: "Full stack Independent Project",
+            link: "https://github.com/username/project-three",
+            img: projectImage
         },
 
     ];
