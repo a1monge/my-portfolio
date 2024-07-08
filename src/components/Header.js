@@ -30,7 +30,7 @@ function Header() {
 
         // Function to generate particles initially and every 30 seconds
         const generateParticles = () => {
-            for (let i = 0; i < 25; i++) {
+            for (let i = 0; i < 28; i++) {
                 createParticle();
             }
         };
