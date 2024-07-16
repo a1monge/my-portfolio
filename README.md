@@ -24,7 +24,3 @@ Welcome to my portfolio website! This project showcases my skills, projects, and
 ## Usage
 
 Navigate through the different sections to learn more about me and my work. The "Featured Projects" section provides a brief overview of some of the projects I have worked on, with links to their respective repositories for more details.
-
-## Deployment
-
-The application is hosted on GitHub Pages. To deploy your own version:
