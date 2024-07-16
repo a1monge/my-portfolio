@@ -51,10 +51,10 @@ const Featured = () => {
                                     <div className="card-body">
                                         <h5 className="card-title">{project.title}</h5>
                                         <p className="card-text">{project.description}</p>
+                                        <a href={project.githubLink} className="btn btn-primary" target="_blank" rel="noopener noreferrer">View on GitHub</a>
                                         {project.appLink && ( // Conditionally render if appLink exists
                                             <a href={project.appLink} className="btn btn-primary" target="_blank" rel="noopener noreferrer">View Static Application</a>
                                         )}
-                                        <a href={project.githubLink} className="btn btn-primary" target="_blank" rel="noopener noreferrer">View on GitHub</a>
                                     </div>
                                 </div>
                                 <div className="col-md-4">
