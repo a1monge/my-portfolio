@@ -23,7 +23,7 @@ const Featured = () => {
             img: dealership
         },
         {
-            title: "Restaurants",
+            title: "Restaurant",
             description: "This website is a fully responsive web application developed using React. The project showcases my front-end development skills, including dynamic content rendering, responsive design with Bootstrap, and modern, intuitive interfaces.",
             appLink: null,
             githubLink: "https://github.com/a1monge/Restaurant-Website.git",
