@@ -36,13 +36,16 @@
 }
 
 .btn-primary {
-  background-color: rgba(0, 0, 255, 0.728);
+  background-color: rgba(111, 0, 255, 0.728) !important;
   border: none;
+
+  margin-right: 10px;
+  /* Add margin to create space between buttons */
   z-index: 10;
 }
 
 .btn-primary:hover {
-  background-color: blue;
+  background-color: rgb(139, 88, 249) !important;
   z-index: 10;
 }
 
