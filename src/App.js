@@ -10,7 +10,6 @@ const App = () => {
     <div className="App">
       <Header />
       <div className="content">
-        <Skills />
         <Featured />
         <Cloud />
       </div>

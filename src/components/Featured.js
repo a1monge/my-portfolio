@@ -23,7 +23,7 @@ const Featured = () => {
         },
         {
             title: "Restaurant",
-            description: "This website is a fully responsive web application developed using <strong>React</strong>. The project showcases my front-end development skills, including dynamic content rendering, responsive design with <strong>Bootstrap</strong>, and modern, intuitive interfaces.",
+            description: "This website is a <strong>fully responsive web application</strong> developed using <strong>React </strong>, <strong>HTML/CSS </strong>, <strong>JavaScript </strong>,and <strong>npm</strong>. The project showcases my front-end development skills, including dynamic content rendering, responsive design with <strong>Bootstrap</strong>, and modern, intuitive interfaces.",
             appLink: null,
             githubLink: "https://github.com/a1monge/Restaurant-Website.git",
             img: restaurant
