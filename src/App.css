@@ -42,6 +42,18 @@ body {
   font-size: 3.5rem;
 }
 
+
+.header h1,
+.header p {
+  transition: color 0.3s ease;
+}
+
+.header h1:hover,
+.header p:hover {
+  color: #ff6347;
+  /* Highlight color */
+}
+
 .header .lead {
   font-size: 1.5rem;
 }
