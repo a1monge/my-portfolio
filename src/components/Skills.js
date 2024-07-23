@@ -1,33 +1,32 @@
-// Skills.js
 import React from 'react';
-import python from '../img/python-logo.png'; // Import the image
-import java from '../img/java-logo.png'; // Import the image
-import Django from '../img/Django.png'; // Import the image
-import sql from '../img/sql-logo.png'; // Import the image
-import react from '../img/react-logo.png'; // Import the image
+import python from '../img/python-logo.png';
+import java from '../img/java-logo.png';
+import Django from '../img/Django.png';
+import sql from '../img/sql-logo.png';
+import react from '../img/react-logo.png';
 
 const Skills = () => {
     return (
-        <div className="container text-center mt-5">
-            <h3>Top Skills</h3>
-            <div className="d-flex justify-content-center flex-wrap">
-                <div className="skill m-3">
-                    <img src={python} alt="Python Logo" style={{ maxWidth: "100%", height: "auto" }} />
+        <section id="Skills" className="skills-section">
+            <h3 className="skills-heading text-center">Top Skills</h3>
+            <div className="skills-container">
+                <div className="skill">
+                    <img src={python} alt="Python Logo" />
                 </div>
-                <div className="skill m-3">
-                    <img src={java} alt="Java Logo" style={{ maxWidth: "100%", height: "auto" }} />
+                <div className="skill">
+                    <img src={java} alt="Java Logo" />
                 </div>
-                <div className="skill m-3">
-                    <img src={react} alt="React Logo" style={{ maxWidth: "100%", height: "auto" }} />
+                <div className="skill">
+                    <img src={react} alt="React Logo" />
                 </div>
-                <div className="skill m-3">
-                    <img src={sql} alt="SQL Logo" style={{ maxWidth: "100%", height: "auto" }} />
+                <div className="skill">
+                    <img src={sql} alt="SQL Logo" />
                 </div>
-                <div className="skill m-3">
-                    <img src={Django} alt="Django Logo" style={{ maxWidth: "100%", height: "auto" }} />
+                <div className="skill">
+                    <img src={Django} alt="Django Logo" />
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 

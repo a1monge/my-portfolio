@@ -1,164 +1,201 @@
-/* App.css */
-.App {
-  background-color: #121212 !important;
-  color: #ffffff;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.navbar-brand {
-  font-size: 2.5rem;
-  z-index: 0 !important;
-  border-bottom: 2px solid white;
-  /* Add a white border at the bottom */
-}
-
-.nav-link {
-  color: #ffffff !important;
-  margin-right: 20px;
-  z-index: 1000;
-}
-
-.header {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: center;
-  padding-top: 15px;
-  position: relative;
-  z-index: 1;
-}
-
-.lead {
-  font-size: 1.5rem;
-}
-
-.btn-primary {
-  background-color: rgba(111, 0, 255, 0.728) !important;
-  border: none;
-
-  margin-right: 10px;
-  /* Add margin to create space between buttons */
-  z-index: 10;
-}
-
-.btn-primary:hover {
-  background-color: rgb(139, 88, 249) !important;
-  z-index: 10;
-}
-
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-}
-
-.rounded-circle {
-  border-radius: 50%;
-}
-
-/* Particle animation */
-@keyframes drift {
-  0% {
-    transform: translate(0, 0);
-  }
-
-  100% {
-    transform: translate(var(--drift-x), var(--drift-y));
-  }
-}
-
-/* Ensure content containers fit within viewport */
+/* General */
 body {
+  font-family: 'Roboto', sans-serif !important;
+  background-color: #181818 !important;
+  margin: 0;
+  padding: 0;
+  display: flex;
   overflow-x: hidden;
+  /* Prevent horizontal scrolling */
 }
 
-.container {
-  z-index: 200 !important;
-  max-width: 100%;
-  overflow-x: hidden;
+/* Header */
+.header {
+  background-color: black !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 33.33vw;
+  /* Cover a third of the viewport width */
+  height: 100vh;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: radial-gradient(circle at center, rgba(255, 99, 71, 0.4) 20%, rgba(0, 0, 0, 1) 70%);
+  /* Spotlight effect */
 }
 
-/* Scrollbar styles */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: rgb(55, 55, 55);
-}
-
-::-webkit-scrollbar-thumb {
-  background: black;
-  border-radius: 4px;
-}
-
-.featured-projects {
-  position: relative;
-  z-index: 2;
-}
-
-.featured-section {
-  color: #ffffff;
-  padding: 40px 0;
-  position: relative;
-  z-index: 3;
-}
-
-.container-fluid {
-  z-index: 2;
-  height: auto;
-}
-
-.card {
-  z-index: 4 !important;
-  color: #ffffff;
-  background-color: #121212 !important;
-  border: 1px solid #333;
-  border-radius: 8px;
-  padding: 15px;
-  box-shadow: 0 0 10px rgba(84, 13, 237, 0.3);
-  margin: 0 auto;
-}
-
-.card-title {
-  font-size: 2.5rem;
-  z-index: 5;
-  color: #ffffff;
-}
-
-.card-text {
-  font-size: 1.0rem;
-  z-index: 5;
-  color: #bfbfbf;
-}
-
-.project-img {
-  z-index: 4 !important;
-  max-width: 100%;
-  width: 100%;
+.header img {
+  border-radius: 50%;
+  width: 275px;
+  height: 275px;
+  object-fit: cover;
   margin-bottom: 20px;
 }
 
-.particle {
-  position: fixed;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background-color: rgb(0, 27, 148);
-  animation: drift 30s linear infinite;
+.header .display-3 {
+  font-size: 3.5rem;
+}
+
+.header .lead {
+  font-size: 1.5rem;
+}
+
+.header .nav-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.header .nav-icons a {
+  color: white;
+  font-size: 2.5rem;
+  margin: 0 10px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.header .nav-icons a:hover {
+  color: #ff6347;
+  transform: scale(1.1);
+}
+
+/* Content */
+.content {
+  font-family: 'Roboto', sans-serif !important;
+  margin-left: 33.33vw;
+  width: calc(100vw - 33.33vw);
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+/* Sections */
+.skills-section,
+.featured-section,
+.cloud-section {
+  font-family: 'Roboto', sans-serif !important;
+  padding: 60px 20px;
+}
+
+/* Skills */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .skill {
-  width: 150px;
-  text-align: center;
-  z-index: 4;
+  flex: 1 1 150px;
+  max-width: 150px;
+  margin: 10px;
 }
 
-.z-index-1000 {
-  z-index: 1000;
-  position: relative;
-  /* Ensure z-index works */
+.skill img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Featured */
+.text-center {
+  color: #ff6347 !important;
+  font-weight: 700 !important;
+}
+
+.card {
+  font-family: 'Roboto', sans-serif !important;
+  background-color: #181818 !important;
+
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border-top: 1px solid black !important;
+  border-bottom: 1px solid black !important;
+  /* Thin line separating cards */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  color: white !important;
+}
+
+.card-text {
+  color: #fff !important;
+}
+
+.card-text strong {
+  color: #ff6347;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.featured-section .card-img,
+.cloud-section .card-img {
+  font-family: 'Roboto', sans-serif !important;
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.btn-primary {
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 500 !important;
+  background-color: mintcream !important;
+  border: none;
+  color: black !important;
+  border-color: #ff6347 !important;
+  padding: 15px 24px;
+  border-radius: 5px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:last-child {
+  margin-right: 0;
+}
+
+.btn-primary:hover {
+  background-color: #ff6347 !important;
+  transform: translateY(-2px);
+  border-color: black !important;
+  box-shadow: 0 4px 6px white;
+}
+
+/* Custom Scrollbar for Webkit Browsers */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(135, 134, 134);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff6347;
 }
