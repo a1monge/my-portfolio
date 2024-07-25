@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.85ac7caa.css",
+    "main.css": "/my-portfolio/static/css/main.464b93ea.css",
     "main.js": "/my-portfolio/static/js/main.fe11b893.js",
     "static/js/453.acca0757.chunk.js": "/my-portfolio/static/js/453.acca0757.chunk.js",
     "static/media/deployed_loggedin.png": "/my-portfolio/static/media/deployed_loggedin.12c925db2594202b0fb6.png",
@@ -18,12 +18,12 @@
     "static/media/python-logo.png": "/my-portfolio/static/media/python-logo.b3934c229cb35736176e.png",
     "static/media/Django.png": "/my-portfolio/static/media/Django.bb0e050b6cee5b031ceb.png",
     "index.html": "/my-portfolio/index.html",
-    "main.85ac7caa.css.map": "/my-portfolio/static/css/main.85ac7caa.css.map",
+    "main.464b93ea.css.map": "/my-portfolio/static/css/main.464b93ea.css.map",
     "main.fe11b893.js.map": "/my-portfolio/static/js/main.fe11b893.js.map",
     "453.acca0757.chunk.js.map": "/my-portfolio/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.85ac7caa.css",
+    "static/css/main.464b93ea.css",
     "static/js/main.fe11b893.js"
   ]
 }
