@@ -26,18 +26,25 @@ body {
   align-items: center;
   justify-content: center;
   color: #fff;
-  background: radial-gradient(circle at center, rgba(255, 99, 71, 0.4) 20%, rgba(0, 0, 0, 1) 70%);
-  /* Spotlight effect */
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 20%, rgba(0, 0, 0, 0.9) 60%);
+  /* Softer white spotlight effect */
 }
 
 .header img {
   border-radius: 50%;
-  width: 275px;
-  height: 275px;
+  width: 20vw;
+  /* Responsive size based on viewport width */
+  height: 20vw;
+  /* Maintain aspect ratio */
+  max-width: 300px;
+  /* Limit maximum size */
+  max-height: 300px;
+  /* Limit maximum size */
   object-fit: cover;
   margin-bottom: 20px;
 }
 
+/* Header Text */
 .header .display-3 {
   font-size: 3.5rem;
 }
@@ -221,8 +228,14 @@ body {
   }
 
   .header img {
-    width: 150px;
-    height: 150px;
+    width: 30vw;
+    /* Adjust for medium screens */
+    height: 30vw;
+    /* Maintain aspect ratio */
+    max-width: 200px;
+    /* Limit maximum size */
+    max-height: 200px;
+    /* Limit maximum size */
   }
 
   .header .display-3 {
