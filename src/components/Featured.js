@@ -10,7 +10,6 @@ const Featured = () => {
         {
             title: "Wildlife Grid",
             description: "WildlifeGrid is a full stack web application developed using <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>PHP</strong>, and <strong>SQL</strong>. I was part of a collaborative effort to monitor and manage the distribution of flora and fauna. The project aimed to raise awareness about local ecosystems and facilitate community involvement in wildlife monitoring.",
-            appLink: "https://a1monge.github.io/WildlifeGrid.com/index.html",
             githubLink: "https://github.com/a1monge/WildlifeGrid.com.git",
             img: collab
         },

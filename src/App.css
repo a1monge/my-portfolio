@@ -18,7 +18,8 @@ body {
   width: 33.33vw;
   /* Cover a third of the viewport width */
   height: 100vh;
-  padding: 20px;
+  padding: 2vw;
+  /* Responsive padding */
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
   z-index: 10;
   display: flex;
@@ -41,7 +42,8 @@ body {
   max-height: 300px;
   /* Limit maximum size */
   object-fit: cover;
-  margin-bottom: 20px;
+  margin-bottom: 2vw;
+  /* Responsive margin */
 }
 
 /* Header Text */
@@ -67,13 +69,15 @@ body {
 .header .nav-icons {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 2vw;
+  /* Responsive margin */
 }
 
 .header .nav-icons a {
   color: white;
   font-size: 2.5rem;
-  margin: 0 10px;
+  margin: 0 1vw;
+  /* Responsive margin */
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -86,8 +90,11 @@ body {
 .content {
   font-family: 'Roboto', sans-serif !important;
   margin-left: 33.33vw;
-  width: calc(100vw - 33.33vw);
-  padding: 20px;
+  /* Adjust based on header width */
+  width: 66.67vw;
+  /* Fill remaining width */
+  padding: 2vw;
+  /* Responsive padding */
   overflow-x: hidden;
 }
 
@@ -96,7 +103,8 @@ body {
 .featured-section,
 .cloud-section {
   font-family: 'Roboto', sans-serif !important;
-  padding: 60px 20px;
+  padding: 4vw 2vw;
+  /* Responsive padding */
 }
 
 /* Skills */
@@ -109,7 +117,8 @@ body {
 .skill {
   flex: 1 1 150px;
   max-width: 150px;
-  margin: 10px;
+  margin: 1vw;
+  /* Responsive margin */
 }
 
 .skill img {
@@ -127,7 +136,8 @@ body {
 .card {
   font-family: 'Roboto', sans-serif !important;
   background-color: #181818 !important;
-  margin-bottom: 20px;
+  margin-bottom: 2vw;
+  /* Responsive margin */
   border-radius: 8px;
   border-top: 1px solid black !important;
   border-bottom: 1px solid black !important;
@@ -141,7 +151,8 @@ body {
 }
 
 .card-body {
-  padding: 20px;
+  padding: 2vw;
+  /* Responsive padding */
 }
 
 .card-title {
@@ -178,13 +189,15 @@ body {
   border: none;
   color: black !important;
   border-color: #ff6347 !important;
-  padding: 15px 24px;
+  padding: 1vw 2vw;
+  /* Responsive padding */
   border-radius: 5px;
   font-size: 2rem;
   font-weight: bold;
   text-decoration: none;
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 1vw;
+  /* Responsive margin */
   transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -223,7 +236,8 @@ body {
     width: 100vw;
     height: auto;
     position: relative;
-    padding: 20px 10px;
+    padding: 2vw;
+    /* Responsive padding */
     box-shadow: none;
   }
 
@@ -248,34 +262,40 @@ body {
 
   .header .nav-icons a {
     font-size: 2rem;
-    margin: 0 5px;
+    margin: 0 1vw;
+    /* Responsive margin */
   }
 
   .content {
     margin-left: 0;
     width: 100vw;
-    padding: 20px 10px;
+    padding: 2vw;
+    /* Responsive padding */
   }
 
   .skills-section,
   .featured-section,
   .cloud-section {
-    padding: 40px 10px;
+    padding: 4vw 2vw;
+    /* Responsive padding */
   }
 
   .skill {
     flex: 1 1 100px;
     max-width: 100px;
-    margin: 5px;
+    margin: 1vw;
+    /* Responsive margin */
   }
 
   .card {
-    margin-bottom: 10px;
+    margin-bottom: 1.5vw;
+    /* Responsive margin */
     border-radius: 5px;
   }
 
   .card-body {
-    padding: 15px;
+    padding: 1.5vw;
+    /* Responsive padding */
   }
 
   .card-title {
@@ -287,7 +307,8 @@ body {
   }
 
   .btn-primary {
-    padding: 10px 15px;
+    padding: 1vw 1.5vw;
+    /* Responsive padding */
     font-size: 1.5rem;
   }
 }
@@ -303,23 +324,27 @@ body {
 
   .header .nav-icons a {
     font-size: 1.5rem;
-    margin: 0 3px;
+    margin: 0 1vw;
+    /* Responsive margin */
   }
 
   .skills-section,
   .featured-section,
   .cloud-section {
-    padding: 30px 5px;
+    padding: 3vw 2vw;
+    /* Responsive padding */
   }
 
   .skill {
     flex: 1 1 75px;
     max-width: 75px;
-    margin: 3px;
+    margin: 1vw;
+    /* Responsive margin */
   }
 
   .card-body {
-    padding: 10px;
+    padding: 1vw;
+    /* Responsive padding */
   }
 
   .card-title {
@@ -331,7 +356,8 @@ body {
   }
 
   .btn-primary {
-    padding: 8px 12px;
+    padding: 0.8vw 1.2vw;
+    /* Responsive padding */
     font-size: 1.2rem;
   }
 }
