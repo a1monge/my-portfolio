@@ -10,8 +10,8 @@ const App = () => {
     <div className="App">
       <Header />
       <div className="content">
-        <Featured />
         <Cloud />
+        <Featured />
       </div>
     </div>
   );
