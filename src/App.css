@@ -101,7 +101,8 @@ body {
 /* Sections */
 .skills-section,
 .featured-section,
-.cloud-section {
+.cloud-section,
+.contact-section{
   font-family: 'Roboto', sans-serif !important;
   padding: 4vw 2vw;
   /* Responsive padding */
@@ -275,7 +276,8 @@ body {
 
   .skills-section,
   .featured-section,
-  .cloud-section {
+  .cloud-section,
+  .contact-section {
     padding: 4vw 2vw;
     /* Responsive padding */
   }
@@ -328,12 +330,6 @@ body {
     /* Responsive margin */
   }
 
-  .skills-section,
-  .featured-section,
-  .cloud-section {
-    padding: 3vw 2vw;
-    /* Responsive padding */
-  }
 
   .skill {
     flex: 1 1 75px;
