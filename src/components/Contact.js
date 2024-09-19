@@ -26,9 +26,9 @@ const Contact = () => {
         fetch('https://portfolio-back-end-gy7r.onrender.com/send-email', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
+                'Content-Type': 'application/json'  // Change to JSON
             },
-            body: new URLSearchParams(formData)
+            body: JSON.stringify(formData)  // Convert formData to JSON
         })
             .then(response => {
                 if (!response.ok) {
