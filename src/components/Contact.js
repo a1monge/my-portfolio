@@ -20,6 +20,8 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault(); // Prevent default form submission
 
+        console.log('Sending data:', formData); // Debugging line
+
         // Send form data to the server
         fetch('https://portfolio-back-end-gy7r.onrender.com/send-email', {
             method: 'POST',
