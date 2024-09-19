@@ -21,7 +21,7 @@ const Contact = () => {
         e.preventDefault(); // Prevent default form submission
 
         // Send form data to the server
-        fetch('https://portfolio-back-end-gy7r.onrender.com/', {
+        fetch('https://portfolio-back-end-gy7r.onrender.com/send-email', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'
