@@ -20,8 +20,11 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault(); // Prevent default form submission
 
+        // Replace this with your actual Render backend URL
+        const backendURL = 'https://portfolio-back-end-gy7r.onrender.com/';
+
         // Send form data to the server
-        fetch('http://localhost:5000/send-email', {
+        fetch(backendURL, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'
