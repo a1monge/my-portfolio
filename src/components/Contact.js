@@ -1,7 +1,56 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../App.css'; // Import your custom CSS
 
 const Contact = () => {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+    });
+
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value
+        });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault(); // Prevent default form submission
+
+        // Send form data to the server
+        fetch('http://localhost:5000/send-email', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: new URLSearchParams(formData)
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    // Show a success message
+                    alert('Message sent successfully!');
+                    // Clear the form
+                    setFormData({
+                        name: '',
+                        email: '',
+                        subject: '',
+                        message: ''
+                    });
+                } else {
+                    // Show an error message if something goes wrong
+                    alert('Failed to send message. Please try again.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred while sending the message.');
+            });
+    };
+
     return (
         <section id='Contact' className="contact-section">
             <div className="container">
@@ -12,8 +61,7 @@ const Contact = () => {
                         <div className="col-md-6">
                             <div className="card-text d-flex flex-column justify-content-between">
                                 <form
-                                    action="http://localhost:5000/send-email" // or your deployed backend URL
-                                    method="POST"
+                                    onSubmit={handleSubmit} // Use handleSubmit for form submission
                                     className="contact-form"
                                 >
                                     <div className="form-group">
@@ -23,6 +71,8 @@ const Contact = () => {
                                             id="name"
                                             name="name"
                                             className="form-control"
+                                            value={formData.name}
+                                            onChange={handleInputChange}
                                             required
                                         />
                                     </div>
@@ -33,6 +83,8 @@ const Contact = () => {
                                             id="email"
                                             name="email"
                                             className="form-control"
+                                            value={formData.email}
+                                            onChange={handleInputChange}
                                             required
                                         />
                                     </div>
@@ -43,6 +95,8 @@ const Contact = () => {
                                             id="subject"
                                             name="subject"
                                             className="form-control"
+                                            value={formData.subject}
+                                            onChange={handleInputChange}
                                         />
                                     </div>
                                     <div className="form-group">
@@ -52,10 +106,11 @@ const Contact = () => {
                                             name="message"
                                             className="form-control"
                                             rows="4"
+                                            value={formData.message}
+                                            onChange={handleInputChange}
                                             required
                                         ></textarea>
                                     </div>
-                                    {/* Move the button inside the form */}
                                     <div className="text-right mt-3">
                                         <button type="submit" className="btn btn-primary">Send</button>
                                     </div>
