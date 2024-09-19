@@ -28,12 +28,15 @@ const Contact = () => {
             },
             body: new URLSearchParams(formData)
         })
-            .then(response => response.json())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                return response.json();
+            })
             .then(data => {
                 if (data.status === 'success') {
-                    // Show a success message
                     alert('Message sent successfully!');
-                    // Clear the form
                     setFormData({
                         name: '',
                         email: '',
@@ -41,7 +44,6 @@ const Contact = () => {
                         message: ''
                     });
                 } else {
-                    // Show an error message if something goes wrong
                     alert('Failed to send message. Please try again.');
                 }
             })
@@ -60,10 +62,7 @@ const Contact = () => {
                     <div className="row no-gutters">
                         <div className="col-md-6">
                             <div className="card-text d-flex flex-column justify-content-between">
-                                <form
-                                    onSubmit={handleSubmit} // Use handleSubmit for form submission
-                                    className="contact-form"
-                                >
+                                <form onSubmit={handleSubmit} className="contact-form">
                                     <div className="form-group">
                                         <label htmlFor="name">Name</label>
                                         <input
