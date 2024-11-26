@@ -1,49 +1,54 @@
-import React, { useEffect } from 'react';
-import $ from 'jquery'; // Import jQuery for Bootstrap JS components
-import 'bootstrap/dist/js/bootstrap.bundle.min'; // Import Bootstrap JS
+import React, { useState } from 'react';
+import 'bootstrap/dist/js/bootstrap.bundle.min'; // Ensure Bootstrap JS is included
+import '../Navbar.css';
 
 const Navbar = () => {
-    // Initialize the Bootstrap navbar toggle with jQuery
-    useEffect(() => {
-        $('.navbar-toggler').on('click', function () {
-            $(this).toggleClass('active');
-        });
-    }, []);
+    const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+
+    const toggleNavbar = () => {
+        setIsNavbarOpen(!isNavbarOpen); // Toggle the navbar open state
+    };
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark z-index-1000">
-            <div className="container">
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav ml-auto">
-                        <li className="nav-item">
-                            <a className="nav-link" href="#Header">About Me</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#Featured">Featured Projects</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#Cloud">Cloud</a>
-                        </li>
-                    </ul>
-                    <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <a className="nav-link" href="https://www.linkedin.com/in/alex-monge-7b551b207/" target="_blank" rel="noopener noreferrer">
-                                <i className="fab fa-linkedin"></i>
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="https://github.com/a1monge" target="_blank" rel="noopener noreferrer">
-                                <i className="fab fa-github"></i>
-                            </a>
-                        </li>
-                    </ul>
+        <section id='Navbar' className="Navbar-section">
+            <nav className="navbar navbar-dark fixed-top z-index-1000">
+                <div className="container-fluid">
+                    {/* Navbar Toggler (Dropdown Button for all screen sizes) */}
+                    <button
+                        className="navbar-toggler"
+                        type="button"
+                        onClick={toggleNavbar} // Toggle the state when clicked
+                        aria-controls="navbarNav"
+                        aria-expanded={isNavbarOpen ? "true" : "false"} // Dynamically set aria-expanded
+                        aria-label="Toggle navigation"
+                    >
+                        <span className="navbar-toggler-icon"></span> {/* Hamburger icon */}
+                    </button>
+
+                    {/* Collapsible Navbar Links */}
+                    <div className={`collapse navbar-collapse ${isNavbarOpen ? "show" : ""}`} id="navbarNav">
+                        <ul className="navbar-nav ms-auto"> {/* Align navbar items to the right */}
+                            <li className="nav-item">
+                                <a className="nav-link text-dark" href="#Cloud">AWS Architectures</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link text-dark" href="#FullStack">Full Stack</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link text-dark" href="#FrontEnd">Frontend</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link text-dark" href="#BackEnd">Backend</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link text-dark" href="#Contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </section>
     );
-}
+};
 
 export default Navbar;

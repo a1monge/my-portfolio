@@ -1,0 +1,130 @@
+/* General Styles for All Screen Sizes */
+
+/* Initially hide navbar links for all screen sizes */
+.navbar-collapse {
+    display: none;
+    /* Hide navbar links by default */
+    position: absolute;
+    /* Position the navbar absolutely */
+    top: 100%;
+    /* Position it just below the hamburger icon */
+    left: 0;
+    /* Align it to the left side */
+    width: 250px;
+    /* Set the width of the navbar to a small size */
+    background-color: #181818;
+    /* Dark grey background when expanded */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    /* Add subtle shadow for better visibility */
+    z-index: 1001;
+    /* Ensure it's above other elements */
+    padding-top: 10px;
+    /* Add some space between the top and the links */
+    display: flex;
+    flex-direction: column;
+    /* Stack the links vertically */
+    justify-content: flex-start;
+    /* Align the links to the top */
+    transition: all 0.3s ease-in-out;
+    /* Smooth transition for showing and hiding */
+    visibility: hidden;
+    /* Initially hidden */
+}
+
+/* Initially, the navbar background should be transparent */
+.navbar {
+    background-color: transparent !important;
+    /* Transparent background by default */
+}
+
+/* Show navbar-toggler button for all screen sizes */
+.navbar-toggler {
+    display: block;
+    /* Show the dropdown button (navbar-toggler) */
+    z-index: 1002;
+    /* Ensure it's above the navbar */
+}
+
+/* Show the navbar links when toggled (after the dropdown button is clicked) */
+.navbar-collapse.show {
+    display: block;
+    /* Show navbar links when toggled */
+    visibility: visible;
+    /* Make the navbar visible */
+    background-color: #181818 !important;
+    /* Dark grey background */
+    color: white !important;
+    /* Set text color to white */
+    font-weight: bold;
+    /* Make the text bold */
+    font-size: 18px;
+    /* Slightly larger font size */
+}
+
+/* Style navbar items */
+.navbar-nav {
+    margin-left: 0;
+    /* Align navbar items to the left */
+    padding-left: 10px;
+    /* Add some padding to the left of the links */
+    width: 100%;
+    /* Ensure it stretches the full width of the navbar */
+}
+
+.navbar-nav .nav-item {
+    padding: 10px 15px;
+    /* Add some padding around the items */
+    text-align: left;
+    /* Align the text to the left */
+}
+
+/* Style each link in the navbar */
+.navbar-nav .nav-item .nav-link {
+    color: white !important;
+    /* Set the text color to white */
+    font-weight: bold;
+    /* Bold the text */
+    font-size: 18px;
+    /* Slightly larger font size */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+/* Hover effect for links */
+.navbar-nav .nav-item .nav-link:hover {
+    color: #ff6347 !important;
+    /* Change text color to orange when hovered */
+    background-color: transparent;
+    /* Keep background transparent on hover */
+}
+
+/* Additional styling for smaller screens to ensure the toggler appears */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        display: none !important;
+        /* Ensure navbar is hidden initially */
+    }
+
+    .navbar-collapse.show {
+        display: block !important;
+        /* Show navbar links when toggled */
+    }
+
+    .navbar-toggler {
+        display: block !important;
+        /* Ensure the toggler is visible */
+    }
+}
+
+/* For larger screens, navbar behaves as a full-width, and toggler disappears */
+@media (min-width: 992px) {
+    .navbar-collapse {
+        display: none !important;
+        /* Ensure navbar is still hidden initially */
+    }
+
+    .navbar-collapse.show {
+        display: block !important;
+        /* Show navbar links when toggled */
+    }
+}
