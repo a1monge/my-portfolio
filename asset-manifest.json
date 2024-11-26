@@ -1,30 +1,25 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.4bf77e2f.css",
-    "main.js": "/my-portfolio/static/js/main.557a7cd0.js",
+    "main.css": "/my-portfolio/static/css/main.5310dd0a.css",
+    "main.js": "/my-portfolio/static/js/main.d4950861.js",
     "static/js/453.acca0757.chunk.js": "/my-portfolio/static/js/453.acca0757.chunk.js",
     "static/media/deployed_loggedin.png": "/my-portfolio/static/media/deployed_loggedin.12c925db2594202b0fb6.png",
     "static/media/restaurant.png": "/my-portfolio/static/media/restaurant.52dc73fe1a33209948c8.png",
     "static/media/diagram0.png": "/my-portfolio/static/media/diagram0.c49495a51bc3e6cefcec.png",
     "static/media/Galaga.png": "/my-portfolio/static/media/Galaga.8e37c31533afae93ac33.png",
-    "static/media/react-logo.png": "/my-portfolio/static/media/react-logo.81ed438b18e24116794d.png",
     "static/media/bootstrap-icons.woff?": "/my-portfolio/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
     "static/media/profile.jpg": "/my-portfolio/static/media/profile.939c616c1934cdba8c65.jpg",
     "static/media/bootstrap-icons.woff2?": "/my-portfolio/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
-    "static/media/java-logo.png": "/my-portfolio/static/media/java-logo.fdabd4e11f1235e4e8e0.png",
     "static/media/collab.png": "/my-portfolio/static/media/collab.b76a5d62285db2fa6b1b.png",
     "static/media/diagram.png": "/my-portfolio/static/media/diagram.5362d596babc74072e16.png",
     "static/media/Diagram_serverless.png": "/my-portfolio/static/media/Diagram_serverless.cb3c5bdf62ebc31172dc.png",
-    "static/media/sql-logo.png": "/my-portfolio/static/media/sql-logo.d98b4e1d1fea63fddee8.png",
-    "static/media/python-logo.png": "/my-portfolio/static/media/python-logo.b3934c229cb35736176e.png",
-    "static/media/Django.png": "/my-portfolio/static/media/Django.bb0e050b6cee5b031ceb.png",
     "index.html": "/my-portfolio/index.html",
-    "main.4bf77e2f.css.map": "/my-portfolio/static/css/main.4bf77e2f.css.map",
-    "main.557a7cd0.js.map": "/my-portfolio/static/js/main.557a7cd0.js.map",
+    "main.5310dd0a.css.map": "/my-portfolio/static/css/main.5310dd0a.css.map",
+    "main.d4950861.js.map": "/my-portfolio/static/js/main.d4950861.js.map",
     "453.acca0757.chunk.js.map": "/my-portfolio/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4bf77e2f.css",
-    "static/js/main.557a7cd0.js"
+    "static/css/main.5310dd0a.css",
+    "static/js/main.d4950861.js"
   ]
 }
