@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import card from '../img/card.png';
 
 const BackEnd = () => {
     return (
@@ -29,6 +30,9 @@ const BackEnd = () => {
                                 </p>
                                 <a href="https://github.com/a1monge/Deck-of-Cards" className="btn btn-primary" target="_blank" rel="noopener noreferrer">GitHub</a>
                             </div>
+                        </div>
+                        <div className="col-md-4">
+                            <img src={card} className="card-img" alt="Card" />
                         </div>
                     </div>
                 </div>

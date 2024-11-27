@@ -1,6 +1,5 @@
 import React from 'react';
 import Header from './components/Header';
-import Featured from './components/Featured';
 import Cloud from './components/Cloud';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar';
@@ -13,14 +12,14 @@ const App = () => {
     <div className="App">
       <Header />
       <div className="content">
-        <Navbar/>
+        <Navbar />
         <Cloud />
         <FullStack />
-        <FrontEnd/>
-        <BackEnd/>
-        <Contact /> 
+        <FrontEnd />
+        <BackEnd />
+        <Contact />
       </div>
-      
+
     </div>
   );
 }

@@ -96,6 +96,8 @@ body {
   padding: 2vw;
   /* Responsive padding */
   overflow-x: hidden;
+  margin-right: 0;
+  /* Ensure no extra space on the right */
 }
 
 /* Sections */
@@ -103,11 +105,14 @@ body {
 .FrontEnd-section,
 .skills-section,
 .FullStack-section,
-.cloud-section,
 .contact-section {
   font-family: 'Roboto', sans-serif !important;
-  padding: 4vw 2vw;
-  /* Responsive padding */
+  margin-top: 6vw;
+  /* Adds vertical space above section titles */
+}
+
+.cloud-section {
+  font-family: 'Roboto', sans-serif !important;
 }
 
 /* Skills */
@@ -141,6 +146,9 @@ body {
   background-color: #181818 !important;
   margin-bottom: 2vw;
   /* Responsive margin */
+  padding-left: 1.5vw;
+  /* Adjust padding inside cards */
+  padding-right: 1.5vw;
   border-radius: 8px;
   border-top: 1px solid black !important;
   border-bottom: 1px solid black !important;
@@ -331,7 +339,6 @@ body {
     margin: 0 1vw;
     /* Responsive margin */
   }
-
 
   .skill {
     flex: 1 1 75px;
