@@ -1,12 +1,26 @@
 import React from 'react';
 import '../App.css';
 import card from '../img/card.png';
+import emissions from '../img/emissions.png';
 
 const BackEnd = () => {
     return (
         <section id='BackEnd' className="BackEnd-section">
             <div className="container">
                 <h2 className="text-center mb-4">Backend Projects</h2>
+                <div className="card mb-4">
+                    <div className="row no-gutters">
+                        <div className="col-md-8">
+                            <div className="card-body">
+                                <h5 className="card-title">Carbon Emissions Analysis</h5>
+                                <p className="card-text">
+                                    Used <strong>SQL</strong> and Visual Studio Code to analyze a dataset of product carbon emissions, focusing on industries contributing to over 75% of global emissions. Developed a complex SQL query to aggregate carbon footprints by industry, calculate percentage contributions, and identify top-emitting products. Delivered actionable insights to highlight the highest-emitting industries and their environmental impact, supporting sustainability initiatives. Checkout my github to see the image of my query result.
+                                </p>
+                                <a href="https://github.com/a1monge/carbon_footprint_analysis" className="btn btn-primary" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div className="card mb-4">
                     <div className="row no-gutters">
                         <div className="col-md-8">
