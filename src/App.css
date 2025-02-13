@@ -33,9 +33,9 @@ body {
 
 .header img {
   border-radius: 50%;
-  width: 20vw;
+  width: 30vw;
   /* Responsive size based on viewport width */
-  height: 20vw;
+  height: 30vw;
   /* Maintain aspect ratio */
   max-width: 300px;
   /* Limit maximum size */
@@ -242,7 +242,7 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
   .header {
     width: 100vw;
     height: auto;
@@ -364,5 +364,52 @@ body {
     padding: 0.8vw 1.2vw;
     /* Responsive padding */
     font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1989px) {
+
+  /* Scale up text sizes */
+  .header .display-3 {
+    font-size: 4rem;
+    /* Larger font size for header title */
+  }
+
+  .header .lead {
+    font-size: 2rem;
+    /* Larger font size for header subtitle */
+  }
+
+  .header .nav-icons a {
+    font-size: 2.5rem;
+    /* Larger font size for icons */
+  }
+
+  .card-title {
+    font-size: 2rem;
+    /* Larger font size for card titles */
+  }
+
+  .card-text {
+    font-size: 1.5rem;
+    /* Larger font size for card text */
+  }
+
+  .btn-primary {
+    font-size: 2rem;
+    /* Larger font size for buttons */
+  }
+
+  .header img {
+    width: 20vw;
+    /* Increase image width */
+    height: 20vw;
+    /* Increase image height */
+    max-width: 400px;
+    /* Limit maximum size */
+    max-height: 400px;
+    /* Limit maximum size */
+    margin-bottom: 2vw;
+    /* Adjust margin if needed */
   }
 }
