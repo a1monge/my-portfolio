@@ -49,7 +49,7 @@ const BackEnd = () => {
                             </div>
                         </div>
                         <div className="col-md-4">
-                            <img src={news} className="card-img" alt="Card" />
+                            <img src={card} className="card-img" alt="Card" />
                         </div>
                     </div>
                 </div>
