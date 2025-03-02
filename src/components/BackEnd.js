@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
 import card from '../img/card.png';
-import emissions from '../img/emissions.png';
+import news from '../img/news.png';
 
 const BackEnd = () => {
     return (
@@ -32,6 +32,9 @@ const BackEnd = () => {
                                 <a href="https://github.com/a1monge/webscrapper_project" className="btn btn-primary" target="_blank" rel="noopener noreferrer">GitHub</a>
                             </div>
                         </div>
+                        <div className="col-md-4">
+                            <img src={news} className="card-img" alt="News" />
+                        </div>
                     </div>
                 </div>
                 <div className="card mb-4">
@@ -46,7 +49,7 @@ const BackEnd = () => {
                             </div>
                         </div>
                         <div className="col-md-4">
-                            <img src={card} className="card-img" alt="Card" />
+                            <img src={news} className="card-img" alt="Card" />
                         </div>
                     </div>
                 </div>

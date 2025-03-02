@@ -367,7 +367,7 @@ body {
   }
 }
 
-@media (min-width: 1989px) {
+@media (min-width: 1600px) {
 
   /* Scale up text sizes */
   .header .display-3 {
